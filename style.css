@@ -1,0 +1,170 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 30px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-position: center;
+    background-size:cover ;
+    background-blend-mode:overlay ;
+    background-color: rgba(0, 0, 0, 0.527);
+    animation: back 10s infinite;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    flex-direction: column;
+
+}
+
+.greeting{
+    text-align: center;
+    width: 700px;
+    margin-bottom: -5px;
+
+}
+
+.greeting h1{
+    font-size: clamp(1.8rem, 5vw, 3rem);
+    margin-bottom: -10px;
+   
+}
+
+
+.greeting p{
+    font-size: clamp(0.8rem ,5vw, 1rem);
+}
+
+
+
+.infoDIV{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    color: black;
+    /* box-shadow: 0px 2px 8px rgb(224, 223, 223); */
+    padding: 20px 20px;
+    border-radius:5px;
+    gap: 10px;
+    width: 100%;
+    max-width: 500px;
+}
+
+form label{
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+    font-weight: 500;
+    gap: 8px;
+}
+
+
+label input,textarea{
+    border: 1px solid rgb(187, 187, 187);
+    border-radius: 8px;
+    font-size: 16px;
+    padding:8px;
+}
+
+.subBTN button{
+    border: none;
+    background-color: rgb(173, 248, 248);
+    padding:12px 25px;
+    width: 100%;
+    border-radius: 8px;
+    font-size:1rem;
+    font-weight:600;
+}
+
+
+.social{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.IG{
+    display: flex;
+    gap: 20px;
+    align-items: center;    
+}
+
+.IG a{
+    text-decoration: none;
+    color: white ;
+    font-size: clamp(1rem , 5vw, 1.5rem);
+}
+
+
+.igLOGO {
+ 
+  background: linear-gradient(45deg, #833AB4, #FD1D1D, #FCAF45, #FDCB5A);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+span i{
+    font-size: 40px;
+}
+
+
+
+.tiktok {
+
+  background: linear-gradient(45deg, #69C9D0, #EE1D52, #FFFFFF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+@keyframes back {
+    0%{
+         background-image: url('pic1.jpg');
+    }
+    20%{
+         background-image: url('pic1.jpg');
+    }
+    50%{
+         background-image: url('pic2.jpg');
+    }
+    100%{
+         background-image: url('pic3.jpg');
+    }
+}
+
+
+
+
+@media (max-width:900px) {
+    .infoDIV{
+        padding: 15px;
+    }
+    .greeting{
+        width: 100%;
+        padding:10px;
+    }
+    body{
+       
+        padding-bottom: 30px;
+        justify-content: start;
+    }
+
+    .social{
+        width: 100%;
+        gap: 20px;
+        padding: 12px 20px;
+    }
+    
+}
